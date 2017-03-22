@@ -73,8 +73,9 @@ source <- textGrob("SOURCE: COMPANY RESEARCH",
 	x = unit(TEXT_GROB_X_OFFSET, "npc"),
 	just = c("left", "bottom"))
 
+# This is necessary to get the proper alignment of the chart title, y-axis title, and source
 grid.arrange(title, y_axis_title, chart, source, ncol = 1, heights = c(0.1, 0.03, 0.55, 0.05))
 
 # We use dev.copy so we can still preview the chart in RStudio while working
-dev.copy(png, "chart.png", width = 530, height = 420)
+dev.copy(png, "chart.png", width = 530, height = 440)
 dev.off()
