@@ -76,5 +76,5 @@ source <- textGrob("SOURCE: COMPANY RESEARCH",
 grid.arrange(title, y_axis_title, chart, source, ncol = 1, heights = c(0.1, 0.03, 0.55, 0.05))
 
 # We use dev.copy so we can still preview the chart in RStudio while working
-dev.copy(png, "chart.png", width = 550, height = 400)
+dev.copy(png, "chart.png", width = 530, height = 420)
 dev.off()
